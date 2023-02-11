@@ -14,6 +14,6 @@ BaselineOfHeng >> BaselineOf: spec [
 			package: 'Heng-Web-Test' ].
 	spec
 		group: 'Core' with: #( 'Heng-Web' );
-		group: 'Test' with: #( 'Heng-Web-Test' );
+		group: 'Tests' with: #( 'Heng-Web-Test' );
 		group: 'default' with: #( 'Core' 'Tests' )
 ]
