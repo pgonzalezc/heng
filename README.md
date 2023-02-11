@@ -2,7 +2,7 @@
 proyecto de pruebas para eliminar
 ```
 Metacello new
-	repository: 'Heng';
+	baseline: 'Heng';
 	repository: 'github://pgonzalezc/heng:main/src';
 	load
 ```
