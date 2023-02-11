@@ -10,7 +10,7 @@ BaselineOfHeng >> BaselineOf: spec [
 	<baseline>
 	spec for: #common do: [ 
 		spec
-			package: 'Heng-Web';
+			package: 'Heng-Web' with: [spec requires: #( 'Seaside3')];
 			package: 'Heng-Web-Test' ].
 	spec
 		group: 'Core' with: #( 'Heng-Web' );
