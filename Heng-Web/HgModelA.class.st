@@ -8,6 +8,11 @@ Class {
 	#category : #'Heng-Web-Common'
 }
 
+{ #category : #initalize }
+HgModelA >> a [
+	^ a
+]
+
 { #category : #initialization }
 HgModelA >> initialize [ 
 
