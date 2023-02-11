@@ -9,11 +9,24 @@ BaselineOfHeng >> BaselineOf: spec [
 
 	<baseline>
 	spec for: #common do: [ 
+		self seaside: spec.
+
 		spec
-			package: 'Heng-Web' with: [ spec requires: #( 'SeasideSt' ) ];
+			package: 'Heng-Web' with: [ spec requires: #( 'Seaside3' ) ];
 			package: 'Heng-Web-Test' ].
 	spec
 		group: 'Core' with: #( 'Heng-Web' );
 		group: 'Test' with: #( 'Heng-Web-Test' );
 		group: 'default' with: #( 'Core' 'Test' )
+]
+
+{ #category : #'as yet unclassified' }
+BaselineOfHeng >> seaside: spec [
+
+	spec
+			baseline: 'Seaside3'
+        	with: [ 
+				spec
+					loads: #('default');
+					repository: 'github://SeasideSt/Seaside:master/repository' ]
 ]
